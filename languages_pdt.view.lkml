@@ -11,4 +11,9 @@ view: languages_pdt {
     sql: ${TABLE}."id" ;;
   }
 
+  measure: count {
+    type: count
+    drill_fields: [id]
+  }
+
 }
